@@ -1,63 +1,73 @@
-p{
-    border: black solid 1px;
-    padding: 15px;
-    font-size: 4em;
+
+#item-a{
+
+background-color: blue;
+}
+#item-b{
+
+background-color: yellow;
+}
+#item-c{
+
+background-color: red;
+}
+#item-d{
+
+background-color: gray;
+}
+#item-e{
+background-color: gold;
+}
+#item-f{
+background-color: green;
+}
+#item-g{
+background-color: salmon;
+}
+#item-h{
+background-color: slateblue;
+}
+#item-i{
+background-color: palevioletred;
 }
 
-header div p{  
-    background-color: rgb(29, 16, 144);
-    border-radius: 16px;
-}
-body{
-   margin: 30px;
-}
-aside div p{
-    border-radius: 16px;
-    background-color: rgb(138, 26, 110);  
-}
-.row-1 p{
-    border-radius: 16px;
-    background-color: rgb(31, 110, 31);  
-}
-.row-2 p{
-    border-radius: 16px;
-    background-color: rgb(25, 63, 133);  
-}
-.row-3 p{
-    border-radius: 16px;
-    background-color: aqua;  
-}
+/* iPads (portrait) ----------- */
+@media(max-width : 1024px) {
 
-@media (max-width: 768px) {
-    /* For mobile phones: */
-    p{
-        border: black solid 1px;
-        padding: 15px;
-        font-size: 4em;
-    }
-    
-    header div p{  
-        background-color: rgb(31, 151, 131);
-        border-radius: 16px;
-    }
-    body{
-       margin: 30px;
-    }
-    aside div p{
-        border-radius: 16px;
-        background-color: rgb(197, 154, 62);  
-    }
-    .row-1 p{
-        border-radius: 16px;
-        background-color: rgb(93, 80, 209);  
-    }
-    .row-2 p{
-        border-radius: 16px;
-        background-color: rgb(153, 157, 161);  
-    }
-    .row-3 p{
-        border-radius: 16px;
-        background-color: rgb(211, 122, 192);  
-    }
+}
+@media(max-width: 768px) {
+/* For mobile phones: */
+#item-a{
+background-color: yellow;
 
-  }
+}
+#item-b{
+
+background-color: gold;
+}
+#item-c{
+background-color: blue;
+
+}
+#item-d{
+
+background-color: gray;
+}
+#item-e{
+
+background-color: slateblue;
+}
+#item-f{
+background-color: palevioletred;
+
+}
+#item-g{
+background-color: salmon;
+}
+#item-h{
+background-color: red;
+}
+#item-i{
+background-color: green;
+}
+}

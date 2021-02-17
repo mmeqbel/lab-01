@@ -1,67 +1,120 @@
-header div p{
-    height: 100px;
+.container{
+display: grid;
+grid-template-rows: 1fr 2fr 2.5fr 1.5fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+background-color: black;
+height: 768px;
+
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.relative{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-header div {
-    width:100%;
+#item-a{
+grid-column:span 5;
+
+}
+#item-b{
+grid-row:span 3;
+
+}
+#item-c{
+grid-column:span 2;
+
+}
+#item-d{
+grid-column:span 2;
+
+}
+#item-i{
+    grid-column:span 4;
 }
 
-aside div p{
-    width:20%;
-    height: 600px;
-    float: left;
-}
-
-section{
-float: left;
-width: 80%;
-}
-.row-1 p{ 
-    display: inline;
-    height: 200px;
-    float: left; 
-    width:50%; 
-}
-.row-2 p{
-    display: inline;
-    float: left; 
-    width:25%; 
-    height: 250px;
-}
-.row-3 p{
-    display: inline;
-    float: left; 
-    width:100%; 
-    height: 150px;
-}
-
-@media (max-width: 768px){
-    header div p{
-        height: 75px;
+/* iPads (portrait) ----------- */
+@media(max-width : 1024px) {
+  /* For mobile phones: */
+  .container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    background-color: black; 
+    
     }
-    aside div p{
-        width:100%;
-        height: 150px;
+    .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .relative{
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
     
-    section{
-    width: 100%;
+    #item-a{
+    grid-column:span 2;
+    
     }
-    .row-1 p{ 
-        display: inline;
-        height: 125px;
-        width:100%; 
+    #item-b{
+        grid-row: auto;
+    grid-column:span 2; 
     }
-    .row-2 p{
-        display: inline;
-        float: left; 
-        width:50%; 
-        height: 250px;
+    #item-c{
+    grid-column:span 2; 
     }
-    .row-3 p{
-        display: inline;
-        float: left; 
-        width:100%; 
-        height: 150px;
+    #item-d{
+    grid-column:span 2;
     }
+    #item-i{
+        grid-column:span 2;
+    }     
+}
+@media(max-width: 768px) {
+    /* For mobile phones: */
+    .container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
+        background-color: black; 
+        
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .relative{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #item-a{
+        grid-column:span 2;
+        
+        }
+        #item-b{
+            grid-row: auto;
+        grid-column:span 2; 
+        }
+        #item-c{
+        grid-column:span 2; 
+        }
+        #item-d{
+        grid-column:span 2;
+        }
+        #item-i{
+            grid-column:span 2;
+        }  
+
 }
